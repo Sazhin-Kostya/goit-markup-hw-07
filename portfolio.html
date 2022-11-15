@@ -18,7 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <!--<link rel="stylesheet" href="css/styles.css" />-->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="head">
@@ -300,7 +301,7 @@
     </main>
     <footer class="foot">
       <div class="container foot-block">
-        <div>
+        <div class="foot-contact-block">
           <a href="./index.html" class="logo link logo-foot"
             ><span class="logo-web">Web</span
             ><span class="logo-studio">Studio</span></a
@@ -361,6 +362,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="foot-mailing-block">
+          <form>
+            <h2 class="foot-email-title">Підпишіться на розсилку</h2>
+            <div class="foot-form-block">
+              <label>
+                <input
+                  type="email"
+                  name="user-mail"
+                  placeholder="E-mail"
+                  required
+                  class="foot-input"
+                />
+              </label>
+              <button type="submit" class="foot-button">
+                Підписатися
+                <svg class="foot-send-svg" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
