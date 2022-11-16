@@ -7,17 +7,13 @@
 }
 
 .pluss-work-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--second-text-color);
 }
 
 .pluss-work-icon {
-    display: flex;
-    align-items: center;
+    @include flex;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
@@ -30,9 +26,7 @@
 
 .pluss-work-item {
     margin-top: 10px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(14px, 1.71, null, 0.03em);
 }
 
 .pluss-work-list {
@@ -43,8 +37,8 @@
 
 .pluss-work-block {
     width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.pluss-work-block:not(:last-child) {
-    margin-right: 30px;
-}

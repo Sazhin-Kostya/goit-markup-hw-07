@@ -1,10 +1,7 @@
 .regular-customers-title {
+    @include font(36px, 1.16, 700, 0.03em);
     color: var(--second-text-color);
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
 }
 
 .regular-customers-list {
@@ -25,25 +22,25 @@
     height: 100%;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: center;
     transition: border var(--trans-dur) var(--transition-timing-function),
         border-radius var(--trans-dur) var(--transition-timing-function),
         fill var(--trans-dur) var(--transition-timing-function);
+    &:hover {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
 }
 
 .regular-customer-svg {
     fill: #afb1b8;
     transition: fill var(--trans-dur) var(--transition-timing-function);
+    .regular-customer-link:hover &,
+    .regular-customer-link:focus & {
+        fill: var(--accent-color);
+    }
 }
 
-.regular-customer-link:hover {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
 
-.regular-customer-link:hover .regular-customer-svg,
-.regular-customer-link:focus .regular-customer-svg {
-    fill: var(--accent-color);
-}
+

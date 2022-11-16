@@ -8,12 +8,8 @@
 }
 
 .logo {
-
+    @include font(26px, 1.19, 700, 0.03em);
     font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
 
@@ -33,19 +29,17 @@
 .link-nav {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 1.14, 500, 0.02em);
     color: var(--second-text-color);
     transition: color var(--trans-dur) var(--transition-timing-function);
     position: relative;
+    &:hover,
+    &:focus {
+        color: var(--accent-color)
+    }
 }
 
-.link-nav:hover,
-.link-nav:focus {
-    color: var(--accent-color)
-}
+
 
 .link .link-nav.current {
     color: var(--accent-color);
@@ -72,23 +66,19 @@
 }
 
 .list-item {
-    display: flex;
-    align-items: center;
+    @include flex;
 }
 
 .list-contact {
-    display: flex;
-    align-items: center;
+    @include flex;
 }
 
 .contact-link {
-    display: flex;
-    align-items: center;
+    @include flex;
 }
 
 .item-contact {
-    display: block;
-    align-self: center;
+    @include flex;
 }
 
 .list-contact .item-contact:not(:last-child) {
@@ -104,29 +94,21 @@
 }
 
 .contact {
-
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include font(14px, 1.14, 500, 0.02em);
     color: var(--main-color);
     text-decoration: none;
     transition: color var(--trans-dur) var(--transition-timing-function);
-
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: currentColor;
+    }
 }
 
 .contact-envelope-svg {
     margin-right: 10px;
-    fill: currentColor;
-}
-
-
-
-.contact:hover,
-.contact:focus {
-    color: var(--accent-color);
     fill: currentColor;
 }
 
