@@ -3,12 +3,12 @@
     background-color: var(--main-bg)
 }
 
-.example-work-title {
+.example-work__title {
     @include font(36px, 1.16, 700, 0.03em);
     color: var(--second-text-color);
 }
 
-.example-work-list {
+.example-work__list {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
@@ -16,12 +16,12 @@
 
 }
 
-.example-work-box {
+.example-work__box {
     position: relative;
 
 }
 
-.example-work-block {
+.example-work__block {
     @include flex;
     justify-content: center;
     position: absolute;
@@ -32,7 +32,7 @@
 
 }
 
-.examle-work-text {
+.examle-work__text {
     @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--hero-foot-bg);

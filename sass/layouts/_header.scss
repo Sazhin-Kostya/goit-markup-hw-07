@@ -1,32 +1,20 @@
-.head {
+.header {
     background-color: var(--main-bg);
     border-bottom: 1px solid #ECECEC;
 }
 
-.nav {
+.header__nav {
     align-self: center;
 }
 
-.logo {
-    @include font(26px, 1.19, 700, 0.03em);
-    font-family: 'Raleway';
-}
 
-
-.logo-web {
-    color: var(--accent-color);
-}
-
-.logo-studio {
-    color: #000000;
-}
 
 .link {
     text-decoration: none;
     list-style-type: none;
 }
 
-.link-nav {
+.menu__item {
     padding-top: 32px;
     padding-bottom: 32px;
     @include font(14px, 1.14, 500, 0.02em);
@@ -41,7 +29,7 @@
 
 
 
-.link .link-nav.current {
+.menu__item.current {
     color: var(--accent-color);
 }
 
@@ -56,44 +44,56 @@
     bottom: 0;
 }
 
-.nav-contact {
+.header__contact {
     display: flex;
     justify-content: space-between;
 }
 
-.nav {
+.header__nav {
     display: flex;
 }
 
-.list-item {
+.menu {
     @include flex;
-}
-
-.list-contact {
-    @include flex;
-}
-
-.contact-link {
-    @include flex;
-}
-
-.item-contact {
-    @include flex;
-}
-
-.list-contact .item-contact:not(:last-child) {
-    margin-right: 50px;
-}
-
-.list-item .list-nav:not(:last-child) {
-    margin-right: 50px;
-}
-
-.nav .logo {
-    margin-right: 93px;
 }
 
 .contact {
+    @include flex;
+}
+
+.contact__link {
+    @include flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include font(14px, 1.14, 500, 0.02em);
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color var(--trans-dur) var(--transition-timing-function);
+        
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        fill: currentColor;
+    }
+}
+
+.contact__item {
+    @include flex;
+}
+
+.contact .contact__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu .menu__nav:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__nav .logo {
+    margin-right: 93px;
+}
+
+/*.contactt {
     padding-top: 32px;
     padding-bottom: 32px;
     @include font(14px, 1.14, 500, 0.02em);
@@ -105,9 +105,9 @@
         color: var(--accent-color);
         fill: currentColor;
     }
-}
+}*/
 
-.contact-envelope-svg {
+.contact__svg {
     margin-right: 10px;
     fill: currentColor;
 }

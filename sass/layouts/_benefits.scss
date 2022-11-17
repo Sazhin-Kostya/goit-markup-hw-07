@@ -1,18 +1,18 @@
-.pluss-work {
+.benefits {
     background-color: var(--main-bg);
 }
 
-.section-pluss-work {
+.benefits__section {
     padding-bottom: 0;
 }
 
-.pluss-work-title {
+.benefits__title {
     @include font(14px, 1.14, 700, 0.03em);
     text-transform: uppercase;
     color: var(--second-text-color);
 }
 
-.pluss-work-icon {
+.benefits__icon {
     @include flex;
     width: 270px;
     height: 120px;
@@ -24,18 +24,18 @@
 
 
 
-.pluss-work-item {
+.benefits__item {
     margin-top: 10px;
     @include font(14px, 1.71, null, 0.03em);
 }
 
-.pluss-work-list {
+.benefits__list {
 
     display: flex;
     list-style-type: none;
 }
 
-.pluss-work-block {
+.benefits__block {
     width: 270px;
     &:not(:last-child) {
         margin-right: 30px;

@@ -18,41 +18,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--<link rel="stylesheet" href="./css/styles.css" />-->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="head">
-      <div class="container nav-contact">
-        <nav class="nav">
+    <header class="header">
+      <div class="container header__contact">
+        <nav class="header__nav">
           <a href="./index.html" class="logo link"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span></a
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio logo--color-dark">Studio</span></a
           >
-          <ul class="link list-item">
-            <li class="list-nav">
-              <a href="./index.html" class="link link-nav current"> Студія</a>
+          <ul class="link menu">
+            <li class="menu__nav">
+              <a href="./index.html" class="link menu__item current"> Студія</a>
             </li>
-            <li class="list-nav">
-              <a href="./portfolio.html" class="link link-nav">Портфоліо</a>
+            <li class="menu__nav">
+              <a href="./portfolio.html" class="link menu__item">Портфоліо</a>
             </li>
-            <li class="list-nav">
-              <a href="./contacts.html" class="link link-nav">Контакти</a>
+            <li class="menu__nav">
+              <a href="./contacts.html" class="link menu__item">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="link list-contact">
-          <li class="item-contact">
-            <a href="mailto:info@devstudio.com" class="contact contact-link"
-              ><svg class="contact-envelope-svg" width="16" height="16">
+        <ul class="link contact">
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link"
+              ><svg class="contact__svg" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="item-contact">
-            <a href="tel:+380961111111" class="contact contact-link">
-              <svg class="contact-envelope-svg" width="16" height="16">
+            <a href="tel:+380961111111" class="contact__link">
+              <svg class="contact__svg" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,63 +62,63 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-bg">
-          <h1 class="hero-title">
+        <div class="container">
+          <h1 class="hero__title">
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button type="button" class="button-hero" data-modal-open>
+          <button type="button" class="hero__button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-      <section class="pluss-work section section-pluss-work">
+      <section class="benefits section benefits__section">
         <div class="container">
           <h2 class="visually-hidden">Плюси співпрраці з нами</h2>
-          <ul class="pluss-work-list">
-            <li class="pluss-work-block">
-              <div class="pluss-work-icon">
-                <svg class="pluss-work-svg" width="70" height="70">
+          <ul class="benefits__list">
+            <li class="benefits__block">
+              <div class="benefits__icon">
+                <svg class="benefits__svg" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="pluss-work-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="pluss-work-item">
+              <h3 class="benefits__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="benefits__item">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="pluss-work-block">
-              <div class="pluss-work-icon">
-                <svg class="pluss-work-svg" width="70" height="70">
+            <li class="benefits__block">
+              <div class="benefits__icon">
+                <svg class="benefits__svg" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="pluss-work-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="pluss-work-item">
+              <h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="benefits__item">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="pluss-work-block">
-              <div class="pluss-work-icon">
-                <svg class="pluss-work-svg" width="70" height="70">
+            <li class="benefits__block">
+              <div class="benefits__icon">
+                <svg class="benefits__svg" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="pluss-work-title">ПЛАНУВАННЯ</h3>
-              <p class="pluss-work-item">
+              <h3 class="benefits__title">ПЛАНУВАННЯ</h3>
+              <p class="benefits__item">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="pluss-work-block">
-              <div class="pluss-work-icon">
-                <svg class="pluss-work-svg" width="70" height="70">
+            <li class="benefits__block">
+              <div class="benefits__icon">
+                <svg class="benefits__svg" width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="pluss-work-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="pluss-work-item">
+              <h3 class="benefits__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="benefits__item">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -129,41 +128,41 @@
       </section>
       <section class="example-work section">
         <div class="container">
-          <h2 class="example-work-title">Чим ми займаємося</h2>
-          <ul class="example-work-list">
-            <li class="example-work-item">
-              <div class="example-work-box">
+          <h2 class="example-work__title">Чим ми займаємося</h2>
+          <ul class="example-work__list">
+            <li class="example-work__item">
+              <div class="example-work__box">
                 <img
                   src="./images/img1.jpg"
                   alt="Приклад виконання роботи"
                   width="370"
                 />
-                <div class="example-work-block">
-                  <p class="examle-work-text">Десктопні додатки</p>
+                <div class="example-work__block">
+                  <p class="examle-work__text">Десктопні додатки</p>
                 </div>
               </div>
             </li>
             <li>
-              <div class="example-work-box">
+              <div class="example-work__box">
                 <img
                   src="./images/img2.jpg"
                   alt="приклад виконання роботи"
                   width="370"
                 />
-                <div class="example-work-block">
-                  <p class="examle-work-text">Мобільні додатки</p>
+                <div class="example-work__block">
+                  <p class="examle-work__text">Мобільні додатки</p>
                 </div>
               </div>
             </li>
             <li>
-              <div class="example-work-box">
+              <div class="example-work__box">
                 <img
                   src="./images/img3.jpg"
                   alt="приклад виконання роботи"
                   width="370"
                 />
-                <div class="example-work-block">
-                  <p class="examle-work-text">Дизайнерські рішення</p>
+                <div class="example-work__block">
+                  <p class="examle-work__text">Дизайнерські рішення</p>
                 </div>
               </div>
             </li>
@@ -431,8 +430,8 @@
       <div class="container foot-block">
         <div class="foot-contact-block">
           <a href="./index.html" class="logo link logo-foot"
-            ><span class="logo-web">Web</span
-            ><span class="logo-studio">Studio</span></a
+            ><span class="logo__web">Web</span
+            ><span class="logo__studio logo--color-light">Studio</span></a
           >
           <address>
             <ul class="foot-contact">
